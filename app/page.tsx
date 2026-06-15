@@ -165,8 +165,7 @@ export default function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="relative z-10 py-24 px-4"
-003e
+      <section className="relative z-10 py-24 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
@@ -179,13 +178,12 @@ export default function Home() {
               { step: '01', title: 'Generowanie Kodu', desc: 'AI pisze Next.js + TypeScript + Tailwind od zera' },
               { step: '02', title: 'Inicjalizacja Repo', desc: 'Automatyczny git init, commit, push do GitHub' },
               { step: '03', title: 'Deployment', desc: 'Vercel pobiera kod i publikuje pod globalną domeną' },
-            ].map((item, i) => (
+            ].map((item) => (
               <div 
                 key={item.step}
                 className="flex items-center gap-6 glass rounded-2xl p-6"
               >
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center text-2xl font-bold shrink-0"
-003e
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center text-2xl font-bold shrink-0">
                   {item.step}
                 </div>
                 <div>
